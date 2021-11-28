@@ -1,0 +1,13 @@
+@mixin large-screen {
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    width: 1360px;
+    margin: 0 auto;
+  }
+}
+
+@mixin col-12 {
+  grid-column: 1 / 13;
+}
