@@ -10,13 +10,13 @@
 </head>
 <body>
   <nav class="nav">
-    <p class="nav__link">Services</p>
-    <p class="nav__link">Projects</p>
-    <p class="nav__link">How We Work</p>
-    <p class="nav__link">About</p>
-    <p class="nav__link">Careers</p>
-    <p class="nav__link">Blog</p>
-    <p class="nav__contact">Contact</p>
+    <a href='#' class="nav__link">Services</a>
+    <a href='#' class="nav__link">Projects</a>
+    <a href='#' class="nav__link">How We Work</a>
+    <a href='#' class="nav__link">About</a>
+    <a href='#' class="nav__link">Careers</a>
+    <a href='#' class="nav__link">Blog</a>
+    <a href='#' class="nav__contact">Contact</a>
   </nav>
   <main class="main">
     <h1 class="main__title">Junior Developers</h1>
@@ -26,7 +26,7 @@
     <section class="main__section">
       <h2>Life at Q is anything but boring! We’re on a mission to find the A’s to the most challenging Q’s of today. That makes our everyday lives more fun, our team more cohesive and our daily tasks more exciting.</h2>
       <p>We’re looking for proactive, team-oriented, and motivated Junior Developers (m/f) to join our Q team. We value a go-getter attitude, strong analytical skills and the drive to get things done. Our team prides itself on working hard and having fun while doing it and we believe in the power of bringing like-minded people together.</p>
-      <article>
+      <article class="main__section__article">
         <h2>What is it all about?</h2>
         <ul>
           <li>We are on the lookout for people who want to gain hands-on experience</li>
@@ -36,7 +36,7 @@
           <li>We will hear your suggestions and support you in your professional and personal development</li>
         </ul>
       </article>
-      <article>
+      <article class="main__section__article">
         <h2>Departments:</h2>
         <ul>
           <li>Backend - PHP (Symfony)</li>
@@ -46,41 +46,50 @@
           <li>*please specify which department you’re applying for</li>
         </ul>
       </article>
-      <article>
+      <article class="main__section__article">
         <h2>Sounds exciting? Click on the link below and apply now!</h2>
         <h2>Feel free to add all of the accomplishments you’re proud of in your CV/Cover letters - student & personal projects, recommendations etc. The more the merrier. :)</h2>
         <p>Apply now</p>
       </article>
     </section>
   </main>
-  <footer>
-    <article>
-      <i></i>
-      <h4>Whatever the Q,
-        We got the A</h4>
-    </article>
-    <article>
-      <h1>Services</h1>
-      <h1>Projects</h1>
-      <h1>How We Work</h1>
-      <h1>Contact</h1>
-      <p>About</p>
-      <p>Careers</p>
-      <p>Blog</p>
-    </article>
-    <article>
-      <h3></h3>
-      <input type="text">
-      <button>Subscribe</button>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-    </article>
-    <article>
-      <p>©2021 - Q | Legal | Privacy Policy</p>
-    </article>
+  <footer class="footer">
+    <section class="footer__wrapper">
+      <article class="footer__line">
+        <i class="footer__logo"><img src="https://q.agency/uploads/assets/logos/Logo-nav.svg" alt=""></i>
+        <br />
+        <h4>Whatever the Q,<br />
+          We got the A</h4>
+      </article>
+      <article class="footer__links">
+        <h1>Services</h1>
+        <h1>Projects</h1>
+        <h1>How We Work</h1>
+        <h1>Contact</h1>
+        <p>About</p>
+        <p>Careers</p>
+        <p>Blog</p>
+      </article>
+      <article class="footer__newsletter">
+        <p>Subscribe to our newsletter</p><br/>
+        <div class="footer__newsletter__sub">
+          <div class="left">
+            <input type="text" placeholder="Your e-mail">
+            <button>Subscribe</button>
+          </div>
+          <div class="right">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+        </div>
+      </article>
+      <article>
+        <p>©2021 - Q | Legal | Privacy Policy</p>
+      </article>
+    </section>
   </footer>
 </body>
 </html>

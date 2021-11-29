@@ -11,3 +11,11 @@
 @mixin col-12 {
   grid-column: 1 / 13;
 }
+
+@mixin flex-full {
+  display: flex;
+  flex-direction: column;
+  width: 1360px;
+  margin: 0 auto;
+  padding: 0 100px;
+}

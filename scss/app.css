@@ -8,6 +8,11 @@ body {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+  color: #121212;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,6 +36,12 @@ body {
 .nav__link {
   padding: 55px 20px;
   margin: 0;
+}
+
+.nav__link:hover {
+  -webkit-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+  color: #4fff00;
 }
 
 @media (min-width: 992px) {
@@ -79,5 +90,112 @@ body {
   grid-column: 1 / 9;
   margin-top: 100px;
   padding-left: 100px;
+}
+
+.main__section h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.main__section p,
+.main__section li {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.main__section__article {
+  margin: 60px auto;
+}
+
+.footer {
+  background-color: #121212;
+  color: white;
+}
+
+.footer__line {
+  margin: 50px 0;
+}
+
+.footer__logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer h4 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-top: 50px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00ff07), to(#00fff8));
+  background-image: linear-gradient(90deg, #00ff07, #00fff8);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.footer__links {
+  border-top: 1px solid #242424;
+}
+
+.footer__links h1 {
+  font-size: 3.125rem;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+.footer__links p {
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 34px;
+}
+
+.footer__newsletter {
+  margin-top: 50px;
+  border-top: 1px solid #242424;
+  padding: 40px 0;
+}
+
+.footer__newsletter p {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.footer__newsletter__sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__newsletter input {
+  border: none;
+  background-color: #121212;
+  color: #242424;
+  font-size: 1.25rem;
+  width: 500px;
+}
+
+.footer__newsletter button {
+  font-size: 16px;
+  padding: 15px 47px 16px 19px;
+  border: 2px solid white;
+  background-color: #121212;
+  color: white;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1360px;
+  margin: 0 auto;
+  padding: 0 100px;
 }
 /*# sourceMappingURL=app.css.map */

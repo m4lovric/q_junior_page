@@ -7,6 +7,11 @@ body {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+  color: $black;
+}
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -23,6 +28,11 @@ body {
   &__link {
     padding: 55px 20px;
     margin: 0;
+  }
+
+  &__link:hover {
+    transition: color 0.15s ease-in-out;
+    color: #4fff00;
   }
 }
 
@@ -54,5 +64,100 @@ body {
     grid-column: 1 / 9;
     margin-top: 100px;
     padding-left: 100px;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    p,
+    li {
+      font-size: 1.25rem;
+      font-weight: 300;
+      line-height: 30px;
+    }
+
+    &__article {
+      margin: 60px auto;
+    }
+  }
+}
+
+.footer {
+  background-color: $black;
+  color: white;
+
+  &__line {
+    margin: 50px 0;
+  }
+
+  &__logo {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  h4 {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: 50px;
+    background-image: linear-gradient(90deg, #00ff07, #00fff8);
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  &__links {
+    border-top: 1px solid #242424;
+
+    h1 {
+      font-size: 3.125rem;
+      line-height: 64px;
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 1.25rem;
+      line-height: 34px;
+    }
+  }
+
+  &__newsletter {
+    margin-top: 50px;
+    border-top: 1px solid #242424;
+    padding: 40px 0;
+
+    p {
+      font-weight: 400;
+      font-size: 1.25rem;
+    }
+
+    &__sub {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    input {
+      border: none;
+      background-color: $black;
+      color: #242424;
+      font-size: 1.25rem;
+      width: 500px;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 15px 47px 16px 19px;
+      border: 2px solid white;
+      background-color: $black;
+      color: white;
+    }
+  }
+
+  &__wrapper {
+    @include flex-full;
   }
 }
