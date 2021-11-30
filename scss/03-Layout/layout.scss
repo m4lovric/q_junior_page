@@ -22,7 +22,32 @@ a {
     font-weight: 500;
     border: 2px solid $black;
     margin: 0 25px 0 20px;
-    padding: 15px 47px 16px 19px;
+    padding: 15px 25px 16px 19px;
+    position: relative;
+  }
+
+  &__contact::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: -5px;
+    left: -5px;
+    background: linear-gradient(90deg, #00ff07, #00fff8);
+  }
+
+  &__contact:hover::before {
+    transition: top left 0.5s ease-in-out;
+    top: 0px;
+    left: 0px;
+  }
+
+  &__contact::after {
+    content: '\2192';
+    display: inline-block;
+    margin-left: 20px;
   }
 
   &__link {
@@ -149,12 +174,50 @@ a {
     }
 
     button {
+      z-index: 0;
+      cursor: pointer;
       font-size: 16px;
-      padding: 15px 47px 16px 19px;
+      padding: 15px 25px 16px 19px;
       border: 2px solid white;
       background-color: $black;
-      color: white;
+      color: black;
+      font-size: 1rem;
+      font-weight: 700;
+      position: relative;
     }
+
+    button::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      top: -5px;
+      left: -5px;
+      background: linear-gradient(90deg, #00ff07, #00fff8);
+    }
+
+    button:hover::before {
+      transition: top left 0.5s ease-in-out;
+      top: 0px;
+      left: 0px;
+    }
+
+    button::after {
+      content: '\2192';
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+
+  &__copy {
+    border-top: 1px solid #242424;
+    padding-top: 30px;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #a1aeb7;
   }
 
   &__wrapper {
