@@ -200,9 +200,25 @@ a {
 .footer__newsletter input {
   border: none;
   background-color: #121212;
-  color: #242424;
+  color: white;
   font-size: 1.25rem;
   width: 500px;
+}
+
+.footer__newsletter input::-webkit-input-placeholder {
+  color: #242424;
+}
+
+.footer__newsletter input:-ms-input-placeholder {
+  color: #242424;
+}
+
+.footer__newsletter input::-ms-input-placeholder {
+  color: #242424;
+}
+
+.footer__newsletter input::placeholder {
+  color: #242424;
 }
 
 .footer__newsletter button {

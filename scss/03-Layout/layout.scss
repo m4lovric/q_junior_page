@@ -168,9 +168,13 @@ a {
     input {
       border: none;
       background-color: $black;
-      color: #242424;
+      color: white;
       font-size: 1.25rem;
       width: 500px;
+    }
+
+    input::placeholder {
+      color: #242424;
     }
 
     button {
